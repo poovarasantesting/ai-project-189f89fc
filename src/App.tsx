@@ -1,11 +1,11 @@
-import { Toaster } from "@/components/ui/toaster";
-import { UserForm } from "@/components/UserForm";
+import { LoginForm } from "./components/login-form"
 
-export default function App() {
+function App() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center p-6">
-      <UserForm />
-      <Toaster />
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+      <LoginForm />
     </div>
-  );
+  )
 }
+
+export default App
