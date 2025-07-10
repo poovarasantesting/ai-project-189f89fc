@@ -1,11 +1,14 @@
-import { LoginForm } from "./components/login-form"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from "@/components/ui/toaster";
+import { ImageGallery } from "@/components/ImageGallery";
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <LoginForm />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ImageGallery />} />
+      </Routes>
+      <Toaster />
+    </BrowserRouter>
+  );
 }
-
-export default App
